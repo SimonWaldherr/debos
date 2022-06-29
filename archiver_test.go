@@ -19,7 +19,7 @@ func TestBase(t *testing.T) {
 	// Test base
 	archive := debos.ArchiveBase{}
 	arcType := archive.Type()
-	assert.Equal(t, 0, int(arcType))
+	assert.Equal(t, 10, int(arcType))
 
 	// Add  option
 	err = archive.AddOption("someoption", "somevalue")
