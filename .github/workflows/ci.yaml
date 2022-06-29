@@ -82,7 +82,9 @@ jobs:
 
   recipe-tests:
     runs-on: ubuntu-latest
-    needs: build
+    needs:
+      - build
+      - unit-tests
     strategy:
       fail-fast: false
       matrix:
